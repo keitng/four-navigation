@@ -1,0 +1,198 @@
+:root {
+    --white: #F8F8F8;
+    --gray: #707070;
+    --blue: #1792D2;
+    --dark-blue: #143774;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* HEADER-------------------  */
+header {
+    background-color: var(--white);
+    padding: 2em 0;
+}
+
+.site-title {
+    text-align: center;
+    padding: 0 0 1.5em;
+}
+
+.title {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    padding-bottom: 0.25em;
+}
+
+.subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .75rem;
+    color: var(--blue);
+    letter-spacing: 0.4em;
+}
+
+ul.nav-bar {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+ul.nav-bar a {
+    text-decoration: none;
+    color: var(--gray);
+    padding: .25em 0;
+}
+
+ul.nav-bar a:hover {
+    color: var(--blue)
+}
+
+.current-page {
+    border-bottom: 1px solid var(--gray);
+}
+
+.current-page:hover {
+    color: var(--gray) !important;
+}
+/* -------------------HEADER  */
+
+/* COLUMNS (4-col design)-------------- */
+
+.col-1 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 75%;
+}
+
+/* --------------COLUMNS (4-col design) */
+
+/* POSTS-------------- */
+main .container {
+    display: flex;
+    gap: 2rem;
+    padding: 2em 0;
+}
+
+main .container img {
+    width: 100%;
+}
+
+.divider {
+    border: 1px solid var(--gray);
+    opacity: 20%;
+    margin: 1em 0;
+}
+
+.featured-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.post {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.post *{
+    margin-top: 1em;
+}
+
+
+.post-info, .post-description, .post-link {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.post-info {
+    font-size: .7rem;
+}
+
+.post-title {
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+    font-family: 'Lora', serif;
+}
+
+.post-description {
+    font-size: .8rem;
+}
+
+.post-redirect-link {
+    color: var(--blue);
+}
+
+.post-link {
+    color: var(--blue);
+    font-size: .75rem;
+    text-decoration: none;
+}
+/* --------------POSTS */
+
+/* SIDE CARDS---------------- */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: .1em solid var(--gray);
+}
+
+.card-post img {
+    width: 100%;
+}
+
+.card-title {
+    color: var(--dark-blue);
+    letter-spacing: .3rem;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: .8rem;
+}
+/* ----------------SIDE CARDS */
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 960px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 675px) {
+    ul.nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .subtitle {
+        letter-spacing: 0.1rem;
+    }
+}
