@@ -16,6 +16,15 @@
     margin: 0 auto;
 }
 
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
 /* HEADER-------------------  */
 header {
     background-color: var(--white);
@@ -138,12 +147,7 @@ main .container img {
     font-size: .8rem;
 }
 
-.post-redirect-link {
-    color: var(--blue);
-}
-
 .post-link {
-    color: var(--blue);
     font-size: .75rem;
     text-decoration: none;
 }
@@ -194,5 +198,20 @@ main .container img {
 
     header .subtitle {
         letter-spacing: 0.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .col {
+        width: 100% !important;
+    }
+
+    .card-title {
+        text-align: center;
     }
 }
